@@ -1,3 +1,25 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the weather in Kathmandu?",
+      "id": "fc2b137a-fe2d-4d78-8942-0627dc28068a",
+      "createdAt": "2025-12-06T13:29:09.362Z"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "wpqdz6bk0",
+          "type": "function",
+          "function": {
+            "name": "getWeather",
+            "arguments": "{\"city\":\"Kathmandu\",\"reasoning\":\"I picked this tool because it is a weather tool.\"}"
+          }
+        }
+      ],
+      "id": "cf94e4e5-13e2-4993-b338-959d579dca42",
+      "createdAt": "2025-12-06T13:29:09.786Z"
+    }
+  ]
 }
