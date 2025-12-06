@@ -18,13 +18,14 @@ export const runAgent = async ({
     messages: history,
     tools,
   })
-
+  console.log('-----------TOOL CALL LOG----------------')
   if (response.tool_calls) {
     console.log(response.tool_calls)
   }
+  console.log('-----------TOOL CALL LOG----------------')
 
   await addMessages([response])
-  logMessage(response)
+  // logMessage(response)
 
   loader.stop()
   return getMessages()
