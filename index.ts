@@ -17,7 +17,5 @@ const response = await runLLM({
   messages,
 })
 
-if (!response) process.exit(1)
-
 await addMessages([{ role: 'assistant', content: response }])
 console.log(response)
