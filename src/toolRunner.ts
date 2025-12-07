@@ -1,0 +1,23 @@
+
+export const getWeather = async ({ toolArgs }: { toolArgs: { city: string } }) => {
+    const { city } = toolArgs
+    return `It is hot, 90deg in ${city}`
+}
+
+export const runTool = async (
+    toolCall: { name: string; arguments: any },
+    userMessage: string
+) => {
+    const input = {
+        userMessage,
+        toolArgs: JSON.parse(toolCall.arguments),
+    }
+
+    switch (toolCall.name) {
+        case 'getWeather':
+            return getWeather(input)
+
+        default:
+            throw new Error(`Unknown tool: ${toolCall.name}`)
+    }
+}

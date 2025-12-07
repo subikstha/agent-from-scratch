@@ -1,3 +1,124 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tell me about the weather?\"\n",
+      "id": "6e4e3bce-f839-4fe6-86f0-4bc71ec83adf",
+      "createdAt": "2025-12-07T13:03:00.980Z"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "f8a5f8kpz",
+          "type": "function",
+          "function": {
+            "name": "getWeather",
+            "arguments": "{\"city\":\"New York\",\"reasoning\":\"I picked this tool because it is a simple and straightforward way to get the weather for a city.\"}"
+          }
+        }
+      ],
+      "id": "0a05b51a-5ab7-4ad8-95f5-ce37c130e6c6",
+      "createdAt": "2025-12-07T13:03:01.434Z"
+    },
+    {
+      "role": "tool",
+      "content": "It is hot, 90deg in New York",
+      "tool_call_id": "f8a5f8kpz",
+      "id": "48d09129-76a3-45a6-bc4d-1491f70e0a51",
+      "createdAt": "2025-12-07T13:03:01.436Z"
+    },
+    {
+      "role": "user",
+      "content": "what was the weather again?",
+      "id": "5f4967d3-fcdb-468f-9919-f8c4ef1512a9",
+      "createdAt": "2025-12-07T13:27:36.555Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It was 90 degrees in New York.",
+      "id": "fc230b55-27fa-4316-b919-caabab235d92",
+      "createdAt": "2025-12-07T13:27:36.797Z"
+    },
+    {
+      "role": "user",
+      "content": "So what about the weather now?",
+      "id": "1e4a935d-b79f-4c79-b36c-795c4f2dd1e4",
+      "createdAt": "2025-12-07T13:27:55.287Z"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "9s3my1swh",
+          "type": "function",
+          "function": {
+            "name": "getWeather",
+            "arguments": "{\"city\":\"New York\",\"reasoning\":\"I picked this tool because it is a simple and straightforward way to get the weather for a city.\"}"
+          }
+        }
+      ],
+      "id": "2f79d23e-ec14-4d30-9639-7551307ccc14",
+      "createdAt": "2025-12-07T13:27:55.530Z"
+    },
+    {
+      "role": "tool",
+      "content": "It is hot, 90deg in New York",
+      "tool_call_id": "9s3my1swh",
+      "id": "e55305c0-b820-4a62-80c5-e7bbbaa06b4a",
+      "createdAt": "2025-12-07T13:27:55.534Z"
+    },
+    {
+      "role": "user",
+      "content": "what was the weather again?",
+      "id": "43677bd5-50e4-45a8-bb2c-4bfd96717c96",
+      "createdAt": "2025-12-07T13:28:35.510Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It is still hot, 90 degrees in New York.",
+      "id": "b15f860e-7944-4e31-a661-58ea4c1edfef",
+      "createdAt": "2025-12-07T13:28:35.752Z"
+    },
+    {
+      "role": "user",
+      "content": "what was the weather again?",
+      "id": "eec7aa3e-6677-44e5-af24-0ad05eec4a2d",
+      "createdAt": "2025-12-07T13:28:43.315Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It is still hot, 90 degrees in New York.",
+      "id": "2155863e-d77b-4ca1-89f9-0555d52e8b87",
+      "createdAt": "2025-12-07T13:28:43.561Z"
+    },
+    {
+      "role": "user",
+      "content": "What is the weather like in Pokhara?",
+      "id": "968a5308-565c-4ca0-96f2-93dcac07b024",
+      "createdAt": "2025-12-07T13:36:50.883Z"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "01syx039f",
+          "type": "function",
+          "function": {
+            "name": "getWeather",
+            "arguments": "{\"city\":\"Pokhara\",\"reasoning\":\"I picked this tool because it is a simple and straightforward way to get the weather for a city.\"}"
+          }
+        }
+      ],
+      "id": "35ec3efe-ed2a-4c80-9421-b23dff82b731",
+      "createdAt": "2025-12-07T13:36:51.489Z"
+    },
+    {
+      "role": "tool",
+      "content": "It is hot, 90deg in Pokhara",
+      "tool_call_id": "01syx039f",
+      "id": "e87add64-04b1-4bc9-8100-fdef5e7132cb",
+      "createdAt": "2025-12-07T13:36:51.492Z"
+    }
+  ]
 }

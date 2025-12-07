@@ -24,10 +24,10 @@ const weatherTool = {
   },
 }
 
-const response = await runAgent({
+await runAgent({
   userMessage,
   tools: [weatherTool],
 })
-console.log('------------------ Message Response Log----------------')
-console.log(response)
-console.log('------------------ Message Response Log----------------')
+// console.log('------------------ Message Response Log in index ----------------')
+// console.log(response)
+// console.log('------------------ Message Response Log in index ----------------')
